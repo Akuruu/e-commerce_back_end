@@ -23,13 +23,13 @@ Product.init(
       type: DataTypes.DECIMAL [10, 2],
       primaryKey: true,
       allowNull: false,
-      // validates decimal
+      isDecimal: true,
     },
     stock: {
       type: DataTypes.INTEGER,
-      // sets default value of 10
+      defaultValue: '10',
       allowNull: false,
-      // validates numeric 
+      isNumeric: true,
     },
     category_id: {
       type: DataTypes.INTEGER,
